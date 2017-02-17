@@ -8,7 +8,11 @@ Rails.application.routes.draw do
 
   get 'contact', to: 'pages#contact' # personalizamos el route para solo tener que poner /contact en vez de pages/contact
 
-  resources :blogs
+  resources :blogs do
+  	member do
+  		get :toggle_status # Le pasamos una nueva ruta dentro de blogs
+  	end
+  end
 
   root 'pages#home'
 end
