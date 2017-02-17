@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
+  
   resources :portfolios
-  get 'pages/home'
 
-  get 'pages/about'
+  get 'about-me', to: 'pages#about' # personalizamos el route para solo tener que poner /about en vez de pages/about
 
-  get 'pages/contact'
+  get 'contact', to: 'pages#contact' # personalizamos el route para solo tener que poner /contact en vez de pages/contact
 
   resources :blogs
 
-  root 'blogs#index'
+  root 'pages#home'
 end
