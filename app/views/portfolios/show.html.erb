@@ -1,0 +1,9 @@
+<%= image_tag @portfolio_item.main_image unless
+	@portfolio_item.thumb_image.nil? %>
+
+<h2><%= @portfolio_item.title %></h2><br>
+<h3><%= @portfolio_item.subtitle %></h3><br>
+<p><%= @portfolio_item.body %></p><br><br>
+
+<%= link_to 'Atras', portfolios_path %>
+<%= link_to 'Eliminar', portfolio_path(@portfolio_item), method: :delete, data: {confirm: 'Estas seguro de eliminar este item?'} %>

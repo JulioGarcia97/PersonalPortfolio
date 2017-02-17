@@ -1,0 +1,20 @@
+<%= form_for @portfolio_item do |f| %>
+	
+	<div>
+		<%= f.label 'Titulo' %>
+		<%= f.text_field :title %>
+	</div>
+
+	<div>
+		<%= f.label 'Subtitulo' %>
+		<%= f.text_field :subtitle %>
+	</div>
+
+	<div>
+		<%= f.label :body %>
+		<%= f.text_area :body %>
+	</div>
+
+	<%= f.submit 'Guardar' %>
+
+<% end %>
