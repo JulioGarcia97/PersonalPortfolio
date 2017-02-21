@@ -1,5 +1,6 @@
-class Portfolio < ApplicationRecord
-	include Placeholder
+ class Portfolio < ApplicationRecord
+ 	has_many :technologies
+	include Placeholder # este viene de concerns
 	validates_presence_of :title, :body, :main_image, :thumb_image
 
 	# Query para buscar por subtitulo usando metodo
