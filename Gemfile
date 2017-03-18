@@ -16,6 +16,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'friendly_id', '~> 5.2'
+gem 'devise', '~> 4.2', '>= 4.2.1'
 
 
 group :development, :test do

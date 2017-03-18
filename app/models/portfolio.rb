@@ -1,5 +1,5 @@
  class Portfolio < ApplicationRecord
- 	has_many :technologies
+ 	has_many :technologies, dependent: :destroy
  	accepts_nested_attributes_for :technologies,
  															 reject_if: lambda {|attr| attr['name'].blank?}
  	# lo que le decimos aqui es que acepte los campos de tecnologies, despues con reject_if ... le decimos que no lo acepte amenos que el campo nombre contenga algo 
