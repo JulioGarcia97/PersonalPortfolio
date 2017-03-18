@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  devise_for :users, path: '', path_names: {sign_in: 'login', sign_up: 'register', sign_out: 'logout'}
+  
   resources :portfolios, except: [:show]
 
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show' # aqui aparte de pasarle una url que nosotros quisimos con as: le pasamos por string el prefix del path que queremos que tome esa url
