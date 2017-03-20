@@ -3,4 +3,5 @@ class ApplicationController < ActionController::Base
   include DeviseCustoms
   include SetSource
   include CurrentUser
+  include DefaultContentPage
 end
