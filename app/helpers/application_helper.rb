@@ -9,4 +9,15 @@ module ApplicationHelper
 	 end
 	end
 
+	# content_tag sirve para hacer codigo html de una mejor manera en vez de que este harcodeado
+	def content_helper
+		if session[:source]
+			greeting = "Gracias por visitarme desde #{session[:source]}"
+      content_tag(:p, greeting, class: 'source-greeting')
+    end
+    # primero le pasamos el tag que queremos que tenga
+    # despues el string o la variable que queremos que ponga dentro de ese tag
+    # Al final la clase si es que queramos que tenga una
+    #Tambien le podemos pasar argumentos a los helpers
+	end
 end
