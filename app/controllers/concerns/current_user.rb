@@ -10,7 +10,10 @@ module CurrentUser
   end
 
   def guest_user
-  	OpenStruct.new(name: 'Not a User', first_name: 'Guest')
-  	#OpenStruct te crea un nuevo data
+  	guest = GuestUser.new
+    guest.name = "Guest User"
+    guest.first_name = "Guest"
+    guest.email = "guest@gmail.com"
+    guest
   end
 end

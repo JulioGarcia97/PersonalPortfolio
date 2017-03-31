@@ -18,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'friendly_id', '~> 5.2'
 gem 'devise', '~> 4.2', '>= 4.2.1'
 gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'petergate', '~> 1.7'
 
 # My gem
 gem 'jgarcia_view_tool', '~> 0.1.0'
