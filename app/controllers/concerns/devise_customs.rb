@@ -2,7 +2,7 @@ module DeviseCustoms
 	extend ActiveSupport::Concern
 
 	included do
-		before_filter :devise_attributes, if: :devise_controller?
+		before_action :devise_attributes, if: :devise_controller?
 	end
 
 	def devise_attributes

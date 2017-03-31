@@ -2,7 +2,7 @@ module DefaultContentPage
 	extend ActiveSupport::Concern
 
 	included do
-		before_filter :set_page_content
+		before_action :set_page_content
 	end
 
 	def set_page_content

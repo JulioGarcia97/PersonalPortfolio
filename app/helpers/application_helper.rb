@@ -20,4 +20,8 @@ module ApplicationHelper
     # Al final la clase si es que queramos que tenga una
     #Tambien le podemos pasar argumentos a los helpers
 	end
+
+	def copyright_helper
+		@copyright = JgarciaViewTool::RenderCopyRight.copyright('JGarcia', 'Todos los derechos reservados')
+	end
 end

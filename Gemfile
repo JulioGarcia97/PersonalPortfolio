@@ -17,10 +17,14 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'friendly_id', '~> 5.2'
 gem 'devise', '~> 4.2', '>= 4.2.1'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 
+# My gem
+gem 'jgarcia_view_tool', '~> 0.1.0'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'pry-byebug', '~> 3.4', '>= 3.4.2'
 end
 
 group :development do
