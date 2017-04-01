@@ -1,7 +1,7 @@
-<h1>Bienvenido <%= current_user.first_name %></h1>
-
-<p>Blog Posts</p>
-<%= @posts.inspect%>
-
-<p>Skills</p>
-<%= @skills.inspect%>
+<div class="inner cover">
+  <h1 class="cover-heading">Bienvenidos.</h1>
+  <p class="lead">El desarrollo de software no deberia ser un proceso secreto, cuando empiezo un nuevo proyecto lo comvierto en mi objetivo para no solo entregarlo bien hecho, si no para tambien para comunicarte cada parte del proceso que esta siendo completada.</p>
+  <p class="lead">
+    <%= link_to 'Acerca de mi', about_me_path, class: 'btn btn-lg btn-secondary' %>
+  </p>
+</div>

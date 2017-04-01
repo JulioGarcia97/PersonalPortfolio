@@ -9,17 +9,20 @@
   </head>
 
   <body>
-		<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+		
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <%= render "shared/application_nav" %>
 
-    <%= render "shared/nav", location: 'top' %>
+      		<%= yield %>
 
-		<%= login_helper %>
+          <%= render "shared/application_footer" %>
 
-		<%= yield %>
+          <%= content_helper %>
 
-    <%= copyright_helper %>
-
-    <%= content_helper %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
