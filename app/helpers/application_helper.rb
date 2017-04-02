@@ -1,5 +1,5 @@
 module ApplicationHelper
-	def login_helper(style)
+	def login_helper(style = '') # Le decimos que por default tendra un string vacio
 	 if current_user.is_a?(GuestUser)
 			(link_to 'Iniciar Sesion', new_user_session_path, class: style) + 
 			' '.html_safe +
