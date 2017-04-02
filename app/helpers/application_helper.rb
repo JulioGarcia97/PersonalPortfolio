@@ -5,7 +5,9 @@ module ApplicationHelper
 			' '.html_safe +
 			(link_to 'Crear Cuenta', new_user_registration_path, class: style)
 	 else
-			link_to 'Cerrar Sesion', destroy_user_session_path, method: :delete, class: style
+	 		(link_to 'Editar Cuenta', edit_user_registration_path, class: style) +
+	 		' '.html_safe +
+			(link_to 'Cerrar Sesion', destroy_user_session_path, method: :delete, class: style) 
 	 end
 	end
 

@@ -183,3 +183,18 @@ body {
 .btn-register{
   text-align: right;
 }
+
+/*
+* Nested Styles
+*/
+
+.login > .card{
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+}
+.forgot-password > .card{
+  width: 25rem;
+  margin: 0 auto;
+  float: none;
+}
