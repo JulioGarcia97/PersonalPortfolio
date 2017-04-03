@@ -1,10 +1,13 @@
+<div class="blog-header">
+  <div class="container">
+    <h1 class="blog-title">Mi Blog</h1>
+    <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+    <%= link_to 'Escribe un nuevo blog', new_blog_path, class: 'links' if logged_in?(:site_admin) %>
+  </div>
+</div>
+
 <div class="col-sm-8 blog-main">
 
   <%= render @blogs %>
-
-  <nav class="blog-pagination">
-    <a class="btn btn-outline-primary" href="#">Older</a>
-    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-  </nav>
 
 </div>
