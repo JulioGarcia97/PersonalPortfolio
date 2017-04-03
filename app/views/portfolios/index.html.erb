@@ -1,13 +1,10 @@
-<h1>Portfolio Items</h1>
+<div class="album text-muted">
+  <div class="container">
+		<div class="row">
 
-<%= link_to 'Nuevo', new_portfolio_path if logged_in?(:site_admin) %>
+			<%= render partial: 'portfolio', collection: @portfolio_items %>
 
-<% @portfolio_items.each do |portfolio|%>
-	<h3><%= link_to portfolio.title, portfolio_show_path(portfolio) %></h3>
-	<p><%= portfolio.subtitle %></p>
-	<p><%= portfolio.body %></p>
-	<p><%= image_tag portfolio.thumb_image unless
-	portfolio.thumb_image.nil? %></p>
-	<p><%= distance_of_time_in_words(portfolio.created_at, Time.now) %></p>
-
-<% end %>
+      
+    </div>
+  </div>
+</div>
