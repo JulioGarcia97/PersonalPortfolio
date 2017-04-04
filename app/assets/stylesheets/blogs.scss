@@ -61,13 +61,13 @@ h6, .h6 {
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #fff;
+  color: #0097d9;
   background-color: transparent;
 }
 
 /* Active state gets a caret at the bottom */
 .nav-link.active {
-  color: #fff;
+  color: #0366d6;
 }
 .nav-link.active:after {
   position: absolute;
@@ -175,10 +175,20 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
+.title a{
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+  color: #aadaf2;
+  text-decoration: none;
+  &:hover{
+    color: #0097d9;
+  }
+}
+
 .links{
   color: #aadaf2;
   &:hover{
-    color: white;
+    color: #0097d9;
   }
 }
 
@@ -186,6 +196,14 @@ h6, .h6 {
   font-size: 1.5em;
   color: #aadaf2;
   &:hover{
-    color: blue;
+    color: #0097d9;
+  }
+}
+
+.brand-link{
+  margin-top: 10px;
+  color: #aadaf2;
+  &:hover{
+    color: #0097d9;
   }
 }
