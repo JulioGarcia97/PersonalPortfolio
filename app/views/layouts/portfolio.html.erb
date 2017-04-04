@@ -14,8 +14,8 @@
 
 		<%= render "shared/portfolio_nav" %>
 
-    <%= render 'shared/portfolio_head' %>
-
+    <%= render 'shared/portfolio_head' unless logged_in?(:site_admin) %>
+    <!-- le decimos que si es un :site_admin el usuario que se logeo no nos muestre el head-->
 
 		<%= yield %>
 
