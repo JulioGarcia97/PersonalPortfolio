@@ -8,11 +8,7 @@
       <div class="col-sm-4 py-4">
         <h4 class="text-white">Explora</h4>
         <ul class="list-unstyled">
-          <li><%= link_to 'Home', root_path, class: 'text-white' %></li> 
-          <li><%= link_to 'Acerca de mi', about_me_path, class: 'text-white' %></li> 
-          <li><%= link_to 'Contacto', contact_path, class: 'text-white'%></li> 
-          <li><%= link_to 'Blog', blogs_path, class: 'text-white' %></li> 
-          <li><%= link_to 'Portafolio', portfolios_path, class: 'text-white' %></li>
+          <%= nav_helper 'text-white', 'li' %>
           <li><%= login_helper 'text-white' %></li>
         </ul>
       </div>
@@ -22,7 +18,7 @@
 
 <div class="navbar navbar-inverse bg-inverse">
   <div class="container d-flex justify-content-between">
-    <a href="#" class="navbar-brand">Julio Garcia</a>
+    <%= link_to 'Julio Garcia', root_path, class: 'navbar-brand'%>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
